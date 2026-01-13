@@ -7,7 +7,7 @@ export const providers = [
         price: 'Rs. 500 / visit',
         rating: 4.8,
         reviews: 124,
-        image: 'https://images.unsplash.com/photo-1581578731117-e08852bb33f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://www.vmcdn.ca/f/files/greatwest/images/branded-content-features/home-sweet-home/2023-articles/02-2-plumber.jpg;w=960',
         experience: '8 years',
         phone: '9800000000'
     },
@@ -19,7 +19,7 @@ export const providers = [
         price: 'Rs. 400 / hour',
         rating: 4.9,
         reviews: 89,
-        image: 'https://images.unsplash.com/photo-1584621533088-7e2894676644?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://www.constructionplacements.com/wp-content/uploads/2024/02/House-Cleaner-Tips-for-Finding-the-Right-One.jpg',
         experience: '5 years',
         phone: '9811111111'
     },

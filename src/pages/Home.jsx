@@ -4,10 +4,13 @@ import { providers } from '../data/mockProviders';
 import ProviderCard from '../components/ProviderCard';
 import CategoryBrowse from '../components/CategoryBrowse';
 import RecentReviews from '../components/RecentReviews';
+import HowItWorks from '../components/HowItWorks';
+import BookingModal from '../components/BookingModal';
 
 const Home = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('All');
+    const [bookingProvider, setBookingProvider] = useState(null);
 
     const categories = ['All', ...new Set(providers.map(p => p.category))];
 
@@ -77,8 +80,10 @@ const Home = () => {
 
             <CategoryBrowse />
 
+            <HowItWorks />
+
             <div className="container" style={{ paddingBottom: '4rem' }}>
-                <h2 style={{ marginBottom: '1.5rem' }}>Available Pros</h2>
+                <h2 style={{ marginBottom: '1.5rem', fontSize: '1.75rem', fontWeight: 700 }}>Available Pros</h2>
 
                 {filteredProviders.length > 0 ? (
                     <div className="grid grid-cols-1 gap-4" style={{
@@ -86,7 +91,11 @@ const Home = () => {
                         gap: '2rem'
                     }}>
                         {filteredProviders.map(provider => (
-                            <ProviderCard key={provider.id} provider={provider} />
+                            <ProviderCard
+                                key={provider.id}
+                                provider={provider}
+                                onBook={() => setBookingProvider(provider)}
+                            />
                         ))}
                     </div>
                 ) : (
@@ -97,6 +106,14 @@ const Home = () => {
             </div>
 
             <RecentReviews />
+
+            {bookingProvider && (
+                <BookingModal
+                    isOpen={!!bookingProvider}
+                    onClose={() => setBookingProvider(null)}
+                    provider={bookingProvider}
+                />
+            )}
         </>
     );
 };

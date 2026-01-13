@@ -1,45 +1,41 @@
 :root {
-  /* Brand Colors - Trustworthy & Natural */
-  --primary: #059669;
-  /* Emerald 600 */
-  --primary-hover: #047857;
-  /* Emerald 700 */
-  --secondary: #334155;
-  /* Slate 700 */
+  /* Brand Colors - Modern & Vibrant */
+  --primary: #6366f1;
+  /* Indigo 500 */
+  --primary-hover: #4f46e5;
+  /* Indigo 600 */
+  --secondary: #0f172a;
+  /* Slate 900 */
   --accent: #f59e0b;
-  /* Amber 500 - for ratings/highlights */
+  /* Amber 500 */
+  --success: #10b981;
+  /* Emerald 500 */
 
   /* Backgrounds */
   --bg-main: #f8fafc;
-  /* Slate 50 */
   --bg-card: #ffffff;
   --bg-input: #f1f5f9;
-  /* Slate 100 */
+  --bg-glass: rgba(255, 255, 255, 0.7);
 
   /* Text Colors */
-  --text-main: #0f172a;
-  /* Slate 900 */
+  --text-main: #1e293b;
+  /* Slate 800 */
   --text-muted: #64748b;
-  /* Slate 500 */
   --text-light: #94a3b8;
-  /* Slate 400 */
 
   /* Borders & Shadows */
   --border: #e2e8f0;
-  /* Slate 200 */
+  --radius-sm: 8px;
   --radius: 12px;
+  --radius-lg: 20px;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-indigo: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Outfit', 'Inter', system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {

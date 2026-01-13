@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Hammer, UserPlus, Search } from 'lucide-react';
+import { Hammer, LayoutDashboard, Search } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <nav style={{ 
-      borderBottom: '1px solid var(--border)', 
-      backgroundColor: 'var(--bg-card)', 
-      position: 'sticky', 
-      top: 0, 
-      zIndex: 50 
+    <nav style={{
+      borderBottom: '1px solid var(--border)',
+      backgroundColor: 'var(--bg-card)',
+      position: 'sticky',
+      top: 0,
+      zIndex: 50
     }}>
       <div className="container" style={{ height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         {/* Logo */}
@@ -24,9 +24,9 @@ const Navbar = () => {
             <Search size={18} />
             Find Support
           </Link>
-          <Link to="/join" className="btn btn-primary">
-            <UserPlus size={18} />
-            Join as Pro
+          <Link to="/provider-dashboard" className="btn btn-primary">
+            <LayoutDashboard size={18} />
+            Provider Portal
           </Link>
         </div>
       </div>
