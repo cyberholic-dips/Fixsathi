@@ -48,3 +48,33 @@ export const providers = [
         phone: '9833333333'
     }
 ];
+
+export const recentReviews = [
+    {
+        id: 'r1',
+        userName: 'Anish Shrestha',
+        rating: 5,
+        comment: 'Ramesh did an excellent job fixing the leak in my kitchen. Very professional and arrived on time.',
+        providerName: 'Ramesh Sharma',
+        providerCategory: 'Plumber',
+        date: '2 days ago'
+    },
+    {
+        id: 'r2',
+        userName: 'Priya Karki',
+        rating: 4,
+        comment: 'Sita was very thorough with the cleaning. My house looks amazing! Will definitely book again.',
+        providerName: 'Sita Gurung',
+        providerCategory: 'Cleaner',
+        date: '1 week ago'
+    },
+    {
+        id: 'r3',
+        userName: 'Sujan Thapa',
+        rating: 5,
+        comment: 'Hari solved a complex wiring issue that others couldn\'t fix. Highly recommended for electrical work.',
+        providerName: 'Hari Thapa',
+        providerCategory: 'Electrician',
+        date: '3 days ago'
+    }
+];

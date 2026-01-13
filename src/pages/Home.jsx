@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Search } from 'lucide-react';
 import { providers } from '../data/mockProviders';
 import ProviderCard from '../components/ProviderCard';
+import CategoryBrowse from '../components/CategoryBrowse';
+import RecentReviews from '../components/RecentReviews';
 
 const Home = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -73,6 +75,8 @@ const Home = () => {
                 </div>
             </div>
 
+            <CategoryBrowse />
+
             <div className="container" style={{ paddingBottom: '4rem' }}>
                 <h2 style={{ marginBottom: '1.5rem' }}>Available Pros</h2>
 
@@ -91,6 +95,8 @@ const Home = () => {
                     </div>
                 )}
             </div>
+
+            <RecentReviews />
         </>
     );
 };
